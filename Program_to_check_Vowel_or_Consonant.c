@@ -1,17 +1,14 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int main() 
 {
-    char n;
-    int c,b;
-    scanf("%c",&n);
-    c=(n=='a' || n=='e' || n=='i' || n=='o' || n=='u');
-    b=(n=='A' || n=='E' || n=='I' || n=='O' || n=='U');
-    if(c||b)
-    {
-        printf("Vowel");
-    }
+    char c;
+    int u,l;
+    scanf("%c", &c);
+   l=(c=='a'||c=='e'||c=='i'||c=='o'||c=='u');
+
+   u=(c=='A'||c=='E'||c=='I'||c=='O'||c=='U');
+    if (l||u)
+    printf("Vowel");
     else
-    {
-        printf("Consonant");
-    }
+    printf("Consonant");
 }
