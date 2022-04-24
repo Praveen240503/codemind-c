@@ -1,13 +1,19 @@
 #include<stdio.h>
+int gcd(int a,int b)
+{
+	if(b==0)
+	{
+		return a;
+	}
+	else
+	{
+		return gcd(b, a%b);
+	}
+}
 int main()
 {
-    int n1,n2,i,gcd;
-    scanf("%d%d",&n1,&n2);
-    for(i=1;i<=n1&&i<=n2;i++)
-    {
-        if(n1%i==0&&n2%i==0)
-        gcd=i;
-    }
-    printf("%d",gcd);
-    return 0;
+	int a,b;
+	scanf("%d %d",&a ,&b);
+	int res = gcd(a, b);
+	printf("%d",res);
 }
