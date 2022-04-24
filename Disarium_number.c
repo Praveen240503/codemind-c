@@ -18,5 +18,3 @@ int main()
     else
      printf("False");
 }
-
-
